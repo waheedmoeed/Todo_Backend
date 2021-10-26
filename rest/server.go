@@ -40,4 +40,9 @@ func (server *HttpServer) Start() {
 		r.GET("/api/task", server.todoController.GetTasks)
 		r.POST("/api/task", server.todoController.AddTask)
 	}
+
+	err := r.Run(server.addr)
+	if err != nil {
+		panic(err)
+	}
 }

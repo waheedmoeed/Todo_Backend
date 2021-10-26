@@ -1,6 +1,8 @@
 package rest
 
 import (
+	"net/http"
+
 	"github.com/abdulwaheed/todobackend/service"
 	"github.com/gin-gonic/gin"
 )
@@ -21,9 +23,9 @@ func NewTodoController(todoService service.TodoService) TodoController {
 }
 
 func (t *todoController) AddTask(ctx *gin.Context) {
-
+	ctx.JSON(http.StatusOK, "Ready to GO!")
 }
 
 func (t *todoController) GetTasks(ctx *gin.Context) {
-
+	ctx.JSON(http.StatusOK, "Ready to GO!")
 }

@@ -9,7 +9,7 @@ type Container struct {
 	TodoService TodoService
 }
 
-func NewContainer() *Container {
+func NewServiceContainer() *Container {
 	repo := repository.NewRepository()
 
 	todoService := NewTodoService()
