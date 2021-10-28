@@ -22,7 +22,7 @@ import (
 
 var (
 	configPath     = "."
-	configFileName = "conf.json"
+	configFileName = "sample_conf.json"
 )
 
 type GbeConfig struct {
