@@ -15,9 +15,9 @@ type HttpServer struct {
 }
 
 //NewHttpServer create server instance
-func NewHttpServer(addr string) *HttpServer {
+func NewHttpServer() *HttpServer {
 	return &HttpServer{
-		addr: addr,
+		addr: ":9001",
 	}
 }
 
